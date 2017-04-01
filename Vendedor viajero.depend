@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1490907347 source:c:\documents and settings\amunozb\mis documentos\downloads\vendedor viajero\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1491087499 source:c:\users\raquel\desktop\andres\avanzados-lab2\funciones.c
+	<stdio.h>
+	<string.h>
+	"funciones.h"
+
+1491075746 c:\users\raquel\desktop\andres\avanzados-lab2\funciones.h
+
+1491090273 source:c:\users\raquel\desktop\andres\avanzados-lab2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
