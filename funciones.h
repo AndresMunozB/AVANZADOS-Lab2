@@ -75,6 +75,7 @@ void searchCharacters(char* caracteres, char* nombreFile);
 
 
 void backTracking(char* elementos,char* cadena, FILE* archivo,int numero);
+void generateCombinations(char* caracteres);
 
 
 #endif // FUNCIONES_H_INCLUDED

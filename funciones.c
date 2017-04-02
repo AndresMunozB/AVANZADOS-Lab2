@@ -144,3 +144,15 @@ void backTracking(char* elementos,char* cadena, FILE* archivo,int numero){
             }
         }
 }
+void generateCombinations(char* caracteres){
+        FILE* archivoSalida= fopen("salida.out","w");
+        char cadena[250];
+        memset(cadena,0,sizeof(cadena));
+        backTracking(caracteres,cadena,archivoSalida,0);
+}
+
+
+
+
+
+
