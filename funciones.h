@@ -73,9 +73,28 @@ int validWord(char* palabra);
 void searchCharacters(char* caracteres, char* nombreFile);
 
 
+/*
+ * Funcion backTracking
+ * Funcion que va generando las soluciones validas utilzando e algoritmo de backtraking y cuando encuentra una la escribe en un archivo
+ * @param char* elementos,char* cadena, FILE* archivo,int numero,
+            elementos refiere a los elementos con los cuales se generanran las soluciones validas
+            cadena regiere al string que se ira formando hasta llegar a las soluciones validas
+            archivo refiere al archivo en el cual se escribiran las soluciones validas
+            numero refiere al indice en el cual va a agregar el siguiente caracter, este debe ser 0 cuando se llame a la funcion
 
+*/
 void backTracking(char* elementos,char* cadena, FILE* archivo,int numero);
+/*
+ * Funcion generateCombinations
+ * Funcion que realiza un llamado a la funcion backTraking
+ * @param char* caracteres, refiere a los caracteres con los que se haran las soluciones
+*/
 void generateCombinations(char* caracteres);
+/*
+ * Funcion printTitle
+ * Funcion imprime en consola el titulo del programa en este caso es backtracking
+*/
+void printTitle();
 
 
 #endif // FUNCIONES_H_INCLUDED

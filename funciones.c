@@ -121,6 +121,7 @@ void searchCharacters(char* caracteres, char* nombreFile){
 	}
 	fclose(archivoEntrada);
 }
+
 void backTracking(char* elementos,char* cadena, FILE* archivo,int numero){
         //fprintf(archivo,"NO TERMINADO: %s\n", cadena);
         if(numero == 8 && validWord(cadena)){
@@ -135,7 +136,7 @@ void backTracking(char* elementos,char* cadena, FILE* archivo,int numero){
                 return;
             }
         }
-        if(numero<=8) {
+        if(numero<8) {
             int i;
             for (i=0; i< strlen(elementos); i++ ) {
                  cadena[numero]=elementos[i];
@@ -144,11 +145,20 @@ void backTracking(char* elementos,char* cadena, FILE* archivo,int numero){
             }
         }
 }
+
 void generateCombinations(char* caracteres){
         FILE* archivoSalida= fopen("salida.out","w");
         char cadena[250];
         memset(cadena,0,sizeof(cadena));
         backTracking(caracteres,cadena,archivoSalida,0);
+}
+void printTitle(){
+    printf("  ____                   _      _                           _      _                 \n");
+    printf(" | __ )    __ _    ___  | | __ | |_   _ __    __ _    ___  | | __ (_)  _ __     __ _ \n");
+    printf(" |  _ \\   / _` |  / __| | |/ / | __| | '__|  / _` |  / __| | |/ / | | | '_ \\   / _` |\n");
+    printf(" | |_) | | (_| | | (__  |   <  | |_  | |    | (_| | | (__  |   <  | | | | | | | (_| |\n");
+    printf(" |____/   \\__,_|  \\___| |_|\\_\\  \\__| |_|     \\__,_|  \\___| |_|\\_\\ |_| |_| |_|  \\__, |\n");
+    printf("                                                                               |___/ \n");
 }
 
 

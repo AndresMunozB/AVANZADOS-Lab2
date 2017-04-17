@@ -7,24 +7,8 @@
 
 int main()
 {
-    /*
-    char elementos[20];
-    memset(elementos,0,sizeof(elementos));
-    elementos[0]='0';
-    elementos[1]='5';
-    elementos[2]='6';
-    elementos[3]='1';
-    elementos[4]='2';
-    elementos[5]='a';
 
-
-
-    char cadena[100];
-    memset(cadena,0,sizeof(cadena));
-    FILE* archivo = fopen("archivo.txt","w");
-    backTracking(elementos,cadena, archivo ,0);*/
-
-
+    printTitle();
     char caracteres[250];
 	char nameFile[250];
 	memset(caracteres,0,sizeof(caracteres));
@@ -48,7 +32,7 @@ int main()
 			if (existsFile(nameFile)){
 				searchCharacters(caracteres,nameFile);
 				printf("Generando combinaciones...\n");
-				//aqui se llama al algortimo de backtracking
+				//dentro de la funcion generateCombinations se llama a la funcion que realiza el backrtaking
 				generateCombinations(caracteres);
 				printf("Combinaciones generadas.\n");
 				printf("Las palabras se encuentran en el archivo 'salida.out'.\n\n");
