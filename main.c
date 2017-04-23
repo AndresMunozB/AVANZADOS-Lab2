@@ -8,8 +8,8 @@
 int main()
 {
 
-    printTitle();
-    char caracteres[250];
+  printTitle();
+  char caracteres[250];
 	char nameFile[250];
 	memset(caracteres,0,sizeof(caracteres));
 	memset(nameFile,0,sizeof(nameFile));
